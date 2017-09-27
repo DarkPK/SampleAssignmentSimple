@@ -9,6 +9,7 @@ void setup() {
 void draw() {
   background(255);
   drawOutlineOfLights();
+  displayRedLight();
 }
 
 void drawOutlineOfLights() {
@@ -22,4 +23,9 @@ void drawOutlineOfLights() {
   ellipse(width/2, height/2 - 65, 50, 50); //top
   ellipse(width/2, height/2, 50, 50); //middle
   ellipse(width/2, height/2 + 65, 50, 50); //bottom
+}
+
+void displayRedLight() {
+  fill(255,0,0);
+  ellipse(width/2, height/2 - 65, 50, 50); //top
 }
